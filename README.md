@@ -51,6 +51,9 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
     - Let's check for missing values and review the datasets structure for each dataset  
 </div>
 
+<img src="Images/4.png" alt="" style="max-width:100%;">
+<img src="Images/5.png" alt="" style="max-width:100%;">
+
 <div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">Rent Prices Dataset (df_rent_prices):</h4>
     This dataset provides insights into the average rental prices in different districts and neighborhoods of a city, presumably Barcelona, for the year 2017.
