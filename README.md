@@ -231,6 +231,11 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
     - We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2.
 </div>
 
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/1160c8d9-6281-44a7-a2e0-015fc572e6bc)
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/fb986640-bbe8-4363-b5fd-88975a3a6337)
+
+
+
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
 
@@ -241,6 +246,8 @@ From the biplot, you can observe:
 
 - Both variables seem to contribute similarly to the first principal component, as indicated by the arrows pointing roughly in the same direction.
 - The second principal component captures variation orthogonal to the first, as seen by the difference in direction of the arrows.
+
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/6e6b4591-2c40-49d5-b552-d88f3349ea4d)
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">5 Conclusions</h4>      
@@ -272,6 +279,12 @@ This two datasets are together do not provide great correlation to fruther analy
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">6 Complementary Analysis in Traffic Accident Data</h4>      
 </div>
+
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/461617e1-7825-4882-b7f3-dc2ac0b25113)
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/fde55eff-5c34-4f16-9c98-23fbfc438a54)
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/a778cb71-f29b-49e9-9cc6-00af6a75deac)
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/e7081bde-58df-4f3a-b13c-3ad0a0e6752c)
+![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/63adbc11-17dd-4d58-8b89-f795ba5f3f60)
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
  
