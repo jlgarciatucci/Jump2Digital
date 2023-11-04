@@ -217,6 +217,9 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
    The noise data fields repesent the percentage of people exposed to different noise ranges in the different neighborhoods in order to get an estimated average value of noise level per neighborhood we will do the folowing:
 
 <img src="Images/13.png" alt="" style="max-width:100%;">
+<img src="Images/14.png" alt="" style="max-width:100%;">
+<img src="Images/15.png" alt="" style="max-width:100%;">
+<img src="Images/16.png" alt="" style="max-width:100%;">
 
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
@@ -227,6 +230,7 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
  - For PCA Analysis first we will need meaningful variables this two dataset we merged are not really well correlated since traffic accident data cannot me easily correlated to Rent Prices in all cases. At most it would have some relation to <br>
     - We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2.
 </div>
+
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
 
