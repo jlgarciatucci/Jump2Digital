@@ -143,6 +143,8 @@ Let's see first the summary statistics for for the Rent Prices by district in Ba
 <img src="Images/7.png" alt="" style="max-width:100%;">
 <img src="Images/8.png" alt="" style="max-width:100%;">
 <img src="Images/9.png" alt="" style="max-width:100%;">
+<img src="Images/10.png" alt="" style="max-width:100%;">
+<img src="Images/11.png" alt="" style="max-width:100%;">
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.3 Preliminary Analysis of the Rent Prices Data</h4>      
@@ -182,7 +184,7 @@ From the box plot is easy to identify the outliers there are few and for the pou
 </div>
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
-    - A very important step in analyzing the data is to visualize and understand the physical location were this data is  coming from so le't create and map the rent prices data using folium
+    - A very important step in analyzing the data is to visualize and understand the physical location where this data is coming from so let's create and map the rent prices data using folium
 </div>
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
@@ -192,6 +194,8 @@ From the box plot is easy to identify the outliers there are few and for the pou
 Data/BarcelonaCiutat_Barris.csv
 
 Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-districtes-barris/resource/b21fa550-56ea-4f4c-9adc-b8009381896e?inner_spa
+
+<img src="Images/12.png" alt="" style="max-width:100%;">
 
 <div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
 - Next step is to select which dataset and which fields to use. For this study let's take the accident data set<br>
