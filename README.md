@@ -128,14 +128,21 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.1 Summary Statistics</h4>      
 </div>
 
+
+
 <div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
     
 Let's see first the summary statistics for for the Rent Prices by district in Barcelona
-    
+
+<img src="Images/6.png" alt="" style="max-width:100%;">
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.2 Distribution and Box Plots</h4>      
 </div>
+
+<img src="Images/7.png" alt="" style="max-width:100%;">
+<img src="Images/8.png" alt="" style="max-width:100%;">
+<img src="Images/9.png" alt="" style="max-width:100%;">
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
     <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.3 Preliminary Analysis of the Rent Prices Data</h4>      
