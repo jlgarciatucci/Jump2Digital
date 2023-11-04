@@ -216,32 +216,7 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
  **First we need to process Noise Data**
    The noise data fields repesent the percentage of people exposed to different noise ranges in the different neighborhoods in order to get an estimated average value of noise level per neighborhood we will do the folowing:
 
-1. **Calculating the Midpoint of a Noise Range**:
-   If the range is specified (e.g., "40-45 dB"), the midpoint is the average of the lower and upper bounds of the range.
-   $$
-   \text{Midpoint} = \frac{\text{Lower Bound} + \text{Upper Bound}}{2}
-   $$
-   For open-ended ranges, we assign a reasonable value that represents the range adequately. For example:
-   - For "<40 dB", we could use 35 dB as the midpoint.
-   - For ">=80 dB", we could use 85 dB as the midpoint.
-
-2. **Converting Percentages to Proportions**:
-   The percentage of the population exposed to each noise level range is converted to a proportion.
-   $$
-   \text{Proportion} = \frac{\text{Percentage}}{100}
-   $$
-
-3. **Calculating Weighted Contributions**:
-   Each noise level range's contribution to the average noise level is its midpoint multiplied by the proportion of the population exposed to that range.
-   $$
-   \text{Weighted Contribution} = \text{Midpoint} \times \text{Proportion}
-   $$
-
-4. **Summing Weighted Contributions for the Average Noise Level**:
-   The estimated average noise level for each neighborhood is the sum of all weighted contributions.
-   $$
-   \text{Estimated Average Noise Level} = \sum(\text{Weighted Contributions})
-   $$
+<img src="Images/13.png" alt="" style="max-width:100%;">
 
 
 <div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
