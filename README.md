@@ -1,8 +1,6 @@
-<div style="background-color: #121212; padding: 10px;">
-<img src="Images/header.png" alt="jum2digital" style="max-width:100%;">
-</div>
 
-<div style="background-color: #F5F5F5; padding: 20px; border: 1px solid #CCCCCC;">
+<img src="Images/header.png" alt="jum2digital" style="max-width:100%;">
+
 
 ### Project Description
 
@@ -29,34 +27,38 @@ This analysis centers on multiple datasets pertaining to Barcelona. Each dataset
 
 The objective of this analysis is to comprehensively evaluate these datasets to elucidate the socioeconomic and environmental dynamics shaping Barcelona.
 
-</div>
+### Table of Contents
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">1. Load the Data</h4>      
-</div>
+- [1. Load the Data](#1-load-the-data)
+- [2. Exploratory Analysis](#2-exploratory-analysis)
+  - [2.1 Summary Statistics](#21-summary-statistics)
+  - [2.2 Distribution and Box Plots](#22-distribution-and-box-plots)
+  - [2.3 Preliminary Analysis of the Rent Prices Data](#23-preliminary-analysis-of-the-rent-prices-data)
+  - [2.4 Let's Map 2017 Rent Prices in Barcelona](#24-lets-map-2017-rent-prices-in-barcelona)
+- [3. Merge Accident Dataset with Rent Prices](#31-merge-accident-dataset-with-rent-prices)
+- [4. PCA](#4-pca)
+- [5. Conclusions](#5-conclusions)
+- [6. Complementary Analysis in Traffic Accident Data](#6-complementary-analysis-in-traffic-accident-data)
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
-    - Let's first load the datasets   
-</div>
+
+
+## 1. Load the Data
+    - Let's first load the datasets  
 
 <img src="Images/1.png" alt="" style="max-width:100%;">
 <img src="Images/2.png" alt="" style="max-width:100%;">
 <img src="Images/3.png" alt="" style="max-width:100%;">
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2. Exploratory Analysis</h4>      
-</div>
+## 2. Exploratory Analysis
+- Let's check for missing values and review the datasets structure for each dataset  
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
-    - Let's check for missing values and review the datasets structure for each dataset  
-</div>
 
 <img src="Images/4.png" alt="" style="max-width:100%;">
 <img src="Images/5.png" alt="" style="max-width:100%;">
 
-<div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">Rent Prices Dataset (df_rent_prices):</h4>
-    This dataset provides insights into the average rental prices in different districts and neighborhoods of a city, presumably Barcelona, for the year 2017.
+**Rent Prices Dataset (df_rent_prices)**
+    
+This dataset provides insights into the average rental prices in different districts and neighborhoods of a city, presumably Barcelona, for the year 2017.
 
 **Columns and Data Types:**
 
@@ -70,14 +72,9 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
 - **Preu** (float64): Average monthly rental price in Euros.
     
 **38 missing values in the Preu (Price) column**
-</div>
 
-
-
-
-<div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">Noise Levels Dataset (df_noise):</h4>
-    This dataset provides information on the percentage of the population exposed to various noise levels in different districts and neighborhoods of Barcelona.
+**Noise Levels Dataset (df_noise):**
+This dataset provides information on the percentage of the population exposed to various noise levels in different districts and neighborhoods of Barcelona.
 
 **Columns and Data Types:**
 
@@ -91,11 +88,9 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
 
     
 **0 missing values in the dataset**
-</div>
 
-<div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">Accidents Dataset (df_accidents):</h4>
-    This dataset provides detailed information on traffic accidents attributed to driver causes in Barcelona for the year 2017.
+**Accidents Dataset (df_accidents):**
+This dataset provides detailed information on traffic accidents attributed to driver causes in Barcelona for the year 2017.
 
 **Columns and Data Types:**
 
@@ -122,23 +117,13 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
 
     
 **0 missing values in the dataset**
-</div>
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.1 Summary Statistics</h4>      
-</div>
-
-
-
-<div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
-    
+### 2.1 Summary Statistics
 Let's see first the summary statistics for for the Rent Prices by district in Barcelona
 
 <img src="Images/6.png" alt="" style="max-width:100%;">
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.2 Distribution and Box Plots</h4>      
-</div>
+### 2.2 Distribution and Box Plots    
 
 <img src="Images/7.png" alt="" style="max-width:100%;">
 <img src="Images/8.png" alt="" style="max-width:100%;">
@@ -146,11 +131,7 @@ Let's see first the summary statistics for for the Rent Prices by district in Ba
 <img src="Images/10.png" alt="" style="max-width:100%;">
 <img src="Images/11.png" alt="" style="max-width:100%;">
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.3 Preliminary Analysis of the Rent Prices Data</h4>      
-</div>
-
-<div style="background-color:#F5F5F5; padding: 0.8em; padding-left: 2em; color: black;">
+### 2.3 Preliminary Analysis of the Rent Prices Data
 
 **Variability in Rent Prices:**
 
@@ -179,15 +160,9 @@ Gràcia and Sant Martí have a moderate average rent and a moderate number of en
 
 From the box plot is easy to identify the outliers there are few and for the pourpose of this analysis this are not going to be removed.
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">2.4 Let's Map 2017 Rent Prices in Barcelona</h4>      
-</div>
+### 2.4 Let's Map 2017 Rent Prices in Barcelona
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
-    - A very important step in analyzing the data is to visualize and understand the physical location where this data is coming from so let's create and map the rent prices data using folium
-</div>
-
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
+- A very important step in analyzing the data is to visualize and understand the physical location where this data is coming from so let's create and map the rent prices data using folium
 
 **For Plotting Maps Geo Dataset containing Neighborhoods Polygons of Barcelona is used**
 
@@ -197,24 +172,17 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
 
 <img src="Images/12.png" alt="" style="max-width:100%;">
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
 - Next step is to select which dataset and which fields to use. For this study let's take the accident data set<br>
 - First let's explore and pre process and clean the data.<br>
-</div>
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">3.1 Merge Accident Dataset with Rent Prices</h4>      
-</div>
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
- - Study will focus into summarizing and bringing the average noise levels per Neighborhood and District occurred in Barcelona in 2017.<br>
-    - We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2
-</div>
+## 3 Merge Accident Dataset with Rent Prices ###     
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
-    
+- Study will focus into summarizing and bringing the average noise levels per Neighborhood and District occurred in Barcelona in 2017.<br>
+- We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2
+ 
  **First we need to process Noise Data**
-   The noise data fields repesent the percentage of people exposed to different noise ranges in the different neighborhoods in order to get an estimated average value of noise level per neighborhood we will do the folowing:
+The noise data fields represent the percentage of people exposed to different noise ranges in the different neighborhoods in order to get an estimated average value of noise level per neighborhood we will do the folowing:
 
 <img src="Images/13.png" alt="" style="max-width:100%;">
 <img src="Images/14.png" alt="" style="max-width:100%;">
@@ -222,22 +190,13 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
 <img src="Images/16.png" alt="" style="max-width:100%;">
 
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">4 PCA</h4>      
-</div>
+## 4 PCA
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
- - For PCA Analysis first we will need meaningful variables this two dataset we merged are not really well correlated since traffic accident data cannot me easily correlated to Rent Prices in all cases. At most it would have some relation to <br>
-    - We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2.
-</div>
+ - For PCA Analysis first we will need meaningful variables this two dataset we merged are not really well correlated since traffic accident data cannot me easily correlated to Rent Prices in all cases. At most it would have some relation to 
+- We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2.
 
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/1160c8d9-6281-44a7-a2e0-015fc572e6bc)
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/fb986640-bbe8-4363-b5fd-88975a3a6337)
-
-
-
-
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
 
 - The grey dots represent the neighborhoods projected onto the first two principal components.
 - The red arrows represent the original variables (Preu and Estimated_Average_Noise_Level). The direction and length of the arrows indicate how each variable influences the principal components.
@@ -249,11 +208,7 @@ From the biplot, you can observe:
 
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/6e6b4591-2c40-49d5-b552-d88f3349ea4d)
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">5 Conclusions</h4>      
-</div>
-
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
+## 5 Conclusions   
 
 **Results:**
 The scree plot shows the variance explained by each of the principal components. In our case, since there were only two features ('Preu' and 'Estimated_Average_Noise_Level') to start with, there are only two principal components.
@@ -276,9 +231,7 @@ Despite the PCA suggesting that these two variables contribute similarly to the 
 
 This two datasets are together do not provide great correlation to fruther analyze price rent increase in Barcelona during 20217, even there might be some relationship to noise levels in the neighborhoods many other factors are to be taking into account to perform throuhgt study.
 
-<div style="background-color:#F5F5F5; border-left: 5px solid black; padding: 0.8em; color: black;">
-    <h4 style="margin-top: 0.3em; margin-bottom: 0.3em;">6 Complementary Analysis in Traffic Accident Data</h4>      
-</div>
+## 6 Complementary Analysis in Traffic Accident Data    
 
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/461617e1-7825-4882-b7f3-dc2ac0b25113)
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/fde55eff-5c34-4f16-9c98-23fbfc438a54)
@@ -286,8 +239,6 @@ This two datasets are together do not provide great correlation to fruther analy
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/e7081bde-58df-4f3a-b13c-3ad0a0e6752c)
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/63adbc11-17dd-4d58-8b89-f795ba5f3f60)
 
-<div style="background-color:#F5F5F5; padding-left: 1.5em; color: black;">
- 
 **Analysis**
     
 - From the distribution and mainly from the maps is easy to understand the locations with most accidents and is as expected on the roads with more traffic is where the most accidents happened.
