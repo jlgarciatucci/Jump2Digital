@@ -35,7 +35,7 @@ The objective of this analysis is to comprehensively evaluate these datasets to 
   - [2.2 Distribution and Box Plots](#22-distribution-and-box-plots)
   - [2.3 Preliminary Analysis of the Rent Prices Data](#23-preliminary-analysis-of-the-rent-prices-data)
   - [2.4 Let's Map 2017 Rent Prices in Barcelona](#24-lets-map-2017-rent-prices-in-barcelona)
-- [3. Merge Accident Dataset with Rent Prices](#31-merge-accident-dataset-with-rent-prices)
+- [3. Merge Accident Dataset with Rent Prices](#3-merge-accident-dataset-with-rent-prices)
 - [4. PCA](#4-pca)
 - [5. Conclusions](#5-conclusions)
 - [6. Complementary Analysis in Traffic Accident Data](#6-complementary-analysis-in-traffic-accident-data)
@@ -135,30 +135,30 @@ Let's see first the summary statistics for for the Rent Prices by district in Ba
 
 **Variability in Rent Prices:**
 
-The district of Les Corts shows the highest average monthly rent (Lloguer mitjà mensual) with a mean of €1235.72, and it also has the widest range of rent prices, with a standard deviation of €412.36.
-Nou Barris presents as the district with the lowest average monthly rent at €583.03 and also has the lowest average rent per surface area (Lloguer mitjà per superfície), with a mean of €9.84 per square meter per month.
+The district of Les Corts has the highest average monthly rent, with a mean of €1235.72, and it also displays the widest range in rent prices, evidenced by a standard deviation of €412.36.
+Nou Barris is the district with the lowest average monthly rent at €583.03 and also records the lowest average rent per surface area, with a mean of €9.84 per square meter per month.
 
 **Comparison:**
 
-In districts like Ciutat Vella and Eixample, the average rent per surface area is relatively high, which could indicate that smaller apartments in these areas are priced at a premium compared to larger ones.
-The average rent price per square meter (Lloguer mitjà per superfície) does not vary as widely as the total monthly rent, suggesting that the size of the apartments might be a significant factor in the total rent price differences among districts.
+Districts like Ciutat Vella and Eixample have relatively high average rents per surface area, which could suggest that smaller apartments in these areas come with a premium compared to larger ones.
+The average rent per square meter does not vary as much as the total monthly rent, indicating that apartment size may be a significant factor in the total rent price differences among districts.
 
 **High-End Districts:**
 
-Sarrià-Sant Gervasi stands out with the highest average rent prices both monthly and per square meter, indicating it is one of the most expensive districts in Barcelona to live in.
+Sarrià-Sant Gervasi stands out with the highest average rent prices, both monthly and per square meter, marking it as one of the priciest districts in Barcelona for residents.
     
 **Affordability and Options:**
 
-Horta-Guinardó offers a substantial number of rental options (40 entries for both rent types) with a lower average monthly rent, suggesting a balance between affordability and availability.
-Nou Barris and Horta-Guinardó have lower variability in rent per square meter, indicating more uniformity in pricing within these districts compared to others.
+Horta-Guinardó offers a significant number of rental options (40 entries for both rent types) with a lower average monthly rent, suggesting a balance between affordability and availability.
+Nou Barris and Horta-Guinardó show less variability in rent per square meter, indicating more uniform pricing within these districts compared to others.
     
 **Middle Range Options:**
 
-Gràcia and Sant Martí have a moderate average rent and a moderate number of entries, which could appeal to renters looking for a middle ground in terms of pricing and options.
+Gràcia and Sant Martí offer moderate average rents and a moderate number of listings, which might appeal to renters seeking a middle ground in terms of pricing and options.
     
 **Outliers:**
 
-From the box plot is easy to identify the outliers there are few and for the pourpose of this analysis this are not going to be removed.
+Outliers can be easily identified from the box plot, although they are few and for the purpose of this analysis, they will not be removed.
 
 ### 2.4 Let's Map 2017 Rent Prices in Barcelona
 
@@ -178,9 +178,8 @@ Source:https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-distri
 
 ## 3 Merge Accident Dataset with Rent Prices ###     
 
-- Study will focus into summarizing and bringing the average noise levels per Neighborhood and District occurred in Barcelona in 2017.<br>
-- We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2
- 
+- The study will focus on summarizing and correlating the average noise levels by neighborhood and district in Barcelona in 2017.
+
  **First we need to process Noise Data**
 The noise data fields represent the percentage of people exposed to different noise ranges in the different neighborhoods in order to get an estimated average value of noise level per neighborhood we will do the folowing:
 
@@ -192,8 +191,7 @@ The noise data fields represent the percentage of people exposed to different no
 
 ## 4 PCA
 
- - For PCA Analysis first we will need meaningful variables this two dataset we merged are not really well correlated since traffic accident data cannot me easily correlated to Rent Prices in all cases. At most it would have some relation to 
-- We will actually create two datasets since we have two pricing categories one is Average Rent Price per Month and the other one is Average price per m2.
+ - For PCA analysis, we will need meaningful variables. The two datasets we merged do not correlate well since traffic accident data cannot be easily related to rent prices. At most, there could be some relationship to noise levels in the neighborhoods, but many other factors would need to be considered for a thorough study.
 
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/1160c8d9-6281-44a7-a2e0-015fc572e6bc)
 ![image](https://github.com/jlgarciatucci/Jump2Digital/assets/98712473/fb986640-bbe8-4363-b5fd-88975a3a6337)
@@ -229,7 +227,7 @@ The second principal component would then capture variations in the data that ar
 
 Despite the PCA suggesting that these two variables contribute similarly to the first principal component, the actual linear relationship between them is not strong, according to the correlation coefficient. This result suggests that other factors may be influencing the variation captured by the first principal component, or that the relationship between rent price and noise level is not linear and may be more complex.
 
-This two datasets are together do not provide great correlation to fruther analyze price rent increase in Barcelona during 20217, even there might be some relationship to noise levels in the neighborhoods many other factors are to be taking into account to perform throuhgt study.
+These two datasets together do not show a strong correlation that would allow for further analysis of the increase in rental prices in Barcelona during 2017. Although there might be some relationship between noise levels and neighborhood rental prices, many other factors must be taken into account to perform a thorough study.
 
 ## 6 Complementary Analysis in Traffic Accident Data    
 
@@ -241,8 +239,7 @@ This two datasets are together do not provide great correlation to fruther analy
 
 **Analysis**
     
-- From the distribution and mainly from the maps is easy to understand the locations with most accidents and is as expected on the roads with more traffic is where the most accidents happened.
-    
-- Further analysis can be done with this dataset alone from accident evolution to clustering to determine hot spots.
+- The distribution and maps clearly illustrate the locations with the most accidents, which, as expected, occur on the busier roads.
+- Additional analysis of this dataset alone could range from examining accident trends to clustering to determine hot spots.
 
 
